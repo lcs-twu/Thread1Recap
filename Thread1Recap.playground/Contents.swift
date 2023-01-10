@@ -20,3 +20,26 @@ struct Dog {
         return length*mass
     }
 }
+
+
+
+struct Book{
+    let name: String
+    let authorName: String
+    let yearPublished: Int
+    var length: Float
+    var heightInMetres: Double
+    var width: Float
+    var mass: Float
+    
+    var heightInCentimetre: Double{
+        return heightInMetres*100
+    }
+    
+    var lastTimeBeenBorrowed: String
+    var howManyBooksNotBack: Int
+    var totalBooks: Int
+    var booksLeft: Int{
+        return totalBooks - howManyBooksNotBack
+    }
+}
